@@ -4,12 +4,15 @@
             <div class="head-txt ">
                 <p>Free shipping, 30-day return or refund guarantee.</p>
             </div>
-            <div class="sing_in_up ">
-                <a href="# ">signup</a>
-                <a href="# ">signin</a>
+            <div class="signin/signup">
+                <a href="signin.html">signup/signin</a>
+
+                
+                
 
             </div>
-        </div>
+
+          </div>
     </section>
     <nav class="navbar">
         <div class="navbar-container">
@@ -28,7 +31,7 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;           
 }
 
 .container {
@@ -38,10 +41,10 @@ body {
 }
 
 
-
+/* //........top text ........// */
 
 :root {
-
+    /* //....... Color ........// */
     --primary-color: #ff3c78;
     --light-black: rgba(0, 0, 0, 0.89);
     --black: #000;
@@ -50,7 +53,7 @@ body {
 }
 
 
-
+/* //........top text ........// */
 
 .top-txt {
     background-color: var(--black);
@@ -71,7 +74,7 @@ body {
 }
 
 
-
+/* //........ Navbar ........// */
 
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines {
@@ -194,10 +197,11 @@ body {
         transform: translate(-150%);
         display: flex;
         flex-direction: column;
-
+        /* margin-left: -40px;
+        padding-left: 40px; */
         text-align: center;
         transition: transform 0.5s ease-in-out;
-
+        /* box-shadow: 5px 0px 10px 0px #aaa; */
         overflow: scroll;
     }
     .navbar .menu-items li {
@@ -243,7 +247,7 @@ body {
 }
 
 
-
+/* //........ Home ........// */
 
 .home_page img {
     height: auto;
@@ -316,6 +320,7 @@ body {
 }
 
 
+/* //........ Collections ........// */
 
 .collections {
     display: flex;
@@ -404,7 +409,7 @@ body {
 }
 
 
-
+/* //........ Content 2 ........// */
 
 .content2 {
     width: 330px;
@@ -486,6 +491,7 @@ body {
 }
 
 
+/* //........ Content 3 ........// */
 
 .content3 {
     width: 330px;
@@ -572,6 +578,7 @@ body {
 }
 
 
+/* //........ seller  ........// */
 
 .best-seller {
     display: flex;
@@ -627,7 +634,7 @@ body {
 .seller .best-p1 {
     width: 250px;
     height: 370px;
-
+    /* border: 2px solid black; */
 }
 
 .seller .best-p1 img {
@@ -681,6 +688,16 @@ body {
     color: #f05e8a;
 }
 
+
+/* .best-seller .add-cart button {
+    padding: 5px 5px;
+    margin-top: 5px;
+    font-size: 14px;
+    cursor: pointer;
+} */
+
+
+/* //........ deal of week ........// */
 
 .deal_of_week {
     display: flex;
@@ -748,10 +765,209 @@ body {
 }
 
 
+/* //........ NEWS ........// */
+
+#news {
+    margin-bottom: 250px;
+}
+
+.news-heading p {
+    text-align: center;
+    font-size: 18px;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-top: 70px;
+}
+
+.news-heading h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--light-black);
+}
+
+.l-news {
+    padding-top: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.l-news img {
+    height: 200px;
+    width: 300px;
+}
+
+.l-news1 {
+    position: relative;
+    width: 280px;
+    height: 230px;
+}
+
+.l-news1 .news1-conte {
+    position: absolute;
+    bottom: -60%;
+    left: 7%;
+    background: var(--white);
+    padding: 25px;
+}
+
+.l-news2 {
+    position: relative;
+    width: 280px;
+    height: 230px;
+}
+
+.l-news2 .news2-conte {
+    position: absolute;
+    bottom: -60%;
+    left: 7%;
+    background: var(--white);
+    padding: 25px;
+}
+
+.l-news3 {
+    position: relative;
+    width: 280px;
+    height: 230px;
+}
+
+.l-news3 .news3-conte {
+    position: absolute;
+    bottom: -60%;
+    left: 7%;
+    background: var(--white);
+    padding: 25px;
+}
+
+.l-news1 .news1-conte .date-news1 p {
+    color: var(--light-black);
+    text-align: center;
+    padding: 15px 0;
+}
+
+.l-news1 .news1-conte .date-news1 h4 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.l-news1 .news1-conte .date-news1 a {
+    text-decoration: none;
+    text-align: center;
+    padding: 0 50px;
+    color: var(--primary-color);
+    position: relative;
+    font-weight: 600;
+}
+
+.l-news1 .news1-conte .date-news1 a::after {
+    content: "";
+    position: absolute;
+    background: #ff3c78;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.l-news1 .news1-conte .date-news1 a:hover:after {
+    width: 0%;
+}
+
+.l-news1 .news1-conte .date-news1 a:hover {
+    color: var(--black);
+}
+
+.l-news2 .news2-conte .date-news2 p {
+    color: var(--light-black);
+    text-align: center;
+    padding: 15px 0;
+}
+
+.l-news2 .news2-conte .date-news2 h4 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.l-news2 .news2-conte .date-news2 a {
+    text-decoration: none;
+    text-align: center;
+    padding: 0 60px;
+    color: var(--primary-color);
+    position: relative;
+    font-weight: 600;
+}
+
+.l-news2 .news2-conte .date-news2 a::after {
+    content: "";
+    position: absolute;
+    background: #ff3c78;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.l-news2 .news2-conte .date-news2 a:hover:after {
+    width: 0%;
+}
+
+.l-news2 .news2-conte .date-news2 a:hover {
+    color: var(--black);
+}
+
+.l-news3 .news3-conte .date-news3 p {
+    color: var(--light-black);
+    text-align: center;
+    padding: 15px 0;
+}
+
+.l-news3 .news3-conte .date-news3 h4 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.l-news3 .news3-conte .date-news3 a {
+    text-decoration: none;
+    text-align: center;
+    padding: 0 60px;
+    color: var(--primary-color);
+    position: relative;
+    font-weight: 600;
+}
+
+.l-news3 .news3-conte .date-news3 a::after {
+    content: "";
+    position: absolute;
+    background: #ff3c78;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.l-news3 .news3-conte .date-news3 a:hover:after {
+    width: 0%;
+}
+
+.l-news3 .news3-conte .date-news3 a:hover {
+    color: var(--black);
+}
 
 
-
-
+/* //........ Footer ...... // */
 
 footer {
     width: 100%;
@@ -824,15 +1040,15 @@ footer {
 }
 
 
-
+/* //........ contact ...... // */
 
 .contact {
     margin-top: 45px;
 }
 
 iframe {
-    height: 72vh;
-    width: 100%;
+    height: 90vh;
+    width: 200%;
 }
 
 .form {
@@ -917,7 +1133,7 @@ iframe {
 }
 
 
-
+/* //....... Media Queries .......// */
 
 @media (max-width: 500px) {
     .head {
@@ -1041,7 +1257,7 @@ iframe {
 }
 
 
-
+/* //....... Media Queries For Contact .......// */
 
 @media (max-width: 500px) {
     .form {
@@ -1085,7 +1301,7 @@ iframe {
             <ul class="menu-items">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#sellers">Shop</a></li>
-                <li><a href="add-to-cart">cart</a></li>
+                <li><a href="#Cart">Cart</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="logo">
@@ -1137,6 +1353,7 @@ iframe {
                     <p>Accessories</p>
                     <button><a href="#sellers">SHOP NOW</a></button>
                 </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1148,7 +1365,7 @@ iframe {
                     <img src="https://i.postimg.cc/8CmBZH5N/shoes.webp" alt="img">
                     <div class="best-p1-txt">
                         <div class="name-of-p">
-                            <p>PS England Shoes</p>
+                            <p> England Shoes</p>
                         </div>
                         <div class="rating">
                             <i class='bx bxs-star'></i>
@@ -1166,19 +1383,20 @@ iframe {
                             </div>
                         </div>
                         <div class="buy-now">
-                            <button><a href="">Buy  Now</a></button>
+                            <button><a href="Buy now.html" >Buy  Now</a></button>
+                        <button><a href="cart">Add to cart</a></button>
                         </div>
-                        <div class="add-cart">
-                            <button><a href="">Add to cart</a></button>
-                        </div>
-
+                        <!-- <div class="add-cart">
+                            <button>Add To Cart</button>
+                        </div> -->
                     </div>
+                    
                 </div>
                 <div class="best-p1">
                     <img src="https://i.postimg.cc/76X9ZV8m/Screenshot_from_2022-06-03_18-45-12.png" alt="img">
                     <div class="best-p1-txt">
                         <div class="name-of-p">
-                            <p>PS England Jacket</p>
+                            <p>Rare Rabit Jacket</p>
                         </div>
                         <div class="rating">
                             <i class='bx bxs-star'></i>
@@ -1197,9 +1415,8 @@ iframe {
                         </div>
                         <div class="buy-now">
                             <button><a href="">Buy  Now</a></button>
-                        </div>
-                        <div class="add-cart">
-                            <button><a href="">Add to cart</a></button>
+                            <button><a href="cart">Add to cart</a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -1207,7 +1424,7 @@ iframe {
                     <img src="https://i.postimg.cc/j2FhzSjf/bs2.png" alt="img">
                     <div class="best-p1-txt">
                         <div class="name-of-p">
-                            <p>PS England Shirt</p>
+                            <p> puma Shirt</p>
                         </div>
                         <div class="rating">
                             <i class='bx bxs-star'></i>
@@ -1226,9 +1443,7 @@ iframe {
                         </div>
                         <div class="buy-now">
                             <button><a href="">Buy  Now</a></button>
-                        </div>
-                        <div class="add-cart">
-                            <button><a href="">Add to cart</a></button>
+                            <button>Add to cart</button>
                         </div>
                     </div>
                 </div>
@@ -1236,7 +1451,7 @@ iframe {
                     <img src="https://i.postimg.cc/QtjSDzPF/bs3.png" alt="img">
                     <div class="best-p1-txt">
                         <div class="name-of-p">
-                            <p>PS England Shoes</p>
+                            <p> England Shoes</p>
                         </div>
                         <div class="rating">
                             <i class='bx bxs-star'></i>
@@ -1255,9 +1470,7 @@ iframe {
                         </div>
                         <div class="buy-now">
                             <button><a href="">Buy  Now</a></button>
-                        </div>
-                        <div class="add-cart">
-                            <button><a href="">Add to cart</a></button>
+                            <button> Add to cart</button>
                         </div>
                     </div>
                 </div>
@@ -1270,7 +1483,7 @@ iframe {
                     <img src="https://i.postimg.cc/fbnB2yfj/na1.png" alt="img">
                     <div class="best-p1-txt">
                         <div class="name-of-p">
-                            <p>PS England T-Shirt</p>
+                            <p> Polo T-Shirt</p>
                         </div>
                         <div class="rating">
                             <i class='bx bxs-star'></i>
@@ -1289,9 +1502,7 @@ iframe {
                         </div>
                         <div class="buy-now">
                             <button><a href="">Buy  Now</a></button>
-                        </div>
-                        <div class="add-cart">
-                            <button><a href="">Add to cart</a></button>
+                            <button> Add to cart</button>
                         </div>
                     </div>
                 </div>
@@ -1299,7 +1510,7 @@ iframe {
                     <img src="https://i.postimg.cc/zD02zJq8/na2.png" alt="img">
                     <div class="best-p1-txt">
                         <div class="name-of-p">
-                            <p>PS England Bag</p>
+                            <p> England Bag</p>
                         </div>
                         <div class="rating">
                             <i class='bx bxs-star'></i>
@@ -1317,9 +1528,8 @@ iframe {
                         </div>
                         <div class="buy-now">
                             <button><a href="">Buy  Now</a></button>
-                        </div>
-                        <div class="add-cart">
-                            <button><a href="">Add to cart</a></button>
+                            <button> Add to cart</button>
+
                         </div>
                     </div>
                 </div>
@@ -1327,7 +1537,7 @@ iframe {
                     <img src="https://i.postimg.cc/Dfj5VBcz/sunglasses1.jpg" alt="img">
                     <div class="best-p1-txt">
                         <div class="name-of-p">
-                            <p>PS England Sunglass</p>
+                            <p>Sunglass</p>
                         </div>
                         <div class="rating">
                             <i class='bx bxs-star'></i>
@@ -1346,9 +1556,7 @@ iframe {
                         </div>
                         <div class="buy-now">
                             <button><a href="">Buy  Now</a></button>
-                        </div>
-                        <div class="add-cart">
-                            <button><a href="">Add to cart</a></button>
+                            <button> Add to cart</button>
                         </div>
                     </div>
                 </div>
@@ -1356,7 +1564,7 @@ iframe {
                     <img src="https://i.postimg.cc/FszW12Kc/na4.png" alt="img">
                     <div class="best-p1-txt">
                         <div class="name-of-p">
-                            <p>PS England Shoes</p>
+                            <p> England Shoes</p>
                         </div>
                         <div class="rating">
                             <i class='bx bxs-star'></i>
@@ -1375,9 +1583,7 @@ iframe {
                         </div>
                         <div class="buy-now">
                             <button><a href="">Buy  Now</a></button>
-                        </div>
-                        <div class="add-cart">
-                            <button><a href="">Add to cart</a></button>
+                            <button> Add to cart</button>
                         </div>
                     </div>
                 </div>
@@ -1390,7 +1596,7 @@ iframe {
                     <img src="https://i.postimg.cc/jS7pSQLf/na4.png" alt="img">
                     <div class="best-p1-txt">
                         <div class="name-of-p">
-                            <p>PS England Shoes</p>
+                            <p>England Shoes</p>
                         </div>
                         <div class="rating">
                             <i class='bx bxs-star'></i>
@@ -1409,9 +1615,7 @@ iframe {
                         </div>
                         <div class="buy-now">
                             <button><a href="">Buy  Now</a></button>
-                        </div>
-                        <div class="add-cart">
-                            <button><a href="">Add to cart</a></button>
+                            <button> Add to cart</button>
                         </div>
                     </div>
                 </div>
@@ -1419,7 +1623,7 @@ iframe {
                     <img src="https://i.postimg.cc/fbnB2yfj/na1.png" alt="img">
                     <div class="best-p1-txt">
                         <div class="name-of-p">
-                            <p>PS England T-Shirt</p>
+                            <p>polo T-Shirt</p>
                         </div>
                         <div class="rating">
                             <i class='bx bxs-star'></i>
@@ -1438,9 +1642,7 @@ iframe {
                         </div>
                         <div class="buy-now">
                             <button><a href="">Buy  Now</a></button>
-                        </div>
-                        <div class="add-cart">
-                            <button><a href="">Add to cart</a></button>
+                            <button> Add to cart</button>
                         </div>
                     </div>
                 </div>
@@ -1448,7 +1650,7 @@ iframe {
                     <img src="https://i.postimg.cc/RhVP7YQk/hs1.png" alt="img">
                     <div class="best-p1-txt">
                         <div class="name-of-p">
-                            <p>PS England T-Shirt</p>
+                            <p> England T-Shirt</p>
                         </div>
                         <div class="rating">
                             <i class='bx bxs-star'></i>
@@ -1467,9 +1669,7 @@ iframe {
                         </div>
                         <div class="buy-now">
                             <button><a href="">Buy  Now</a></button>
-                        </div>
-                        <div class="add-cart">
-                            <button><a href="">Add to cart</a></button>
+                            <button> Add to cart</button>
                         </div>
                     </div>
                 </div>
@@ -1477,8 +1677,9 @@ iframe {
                     <img src="https://i.postimg.cc/zD02zJq8/na2.png" alt="img">
                     <div class="best-p1-txt">
                         <div class="name-of-p">
-                            <p>PS England Bag</p>
+                            <p> England Bag</p>
                         </div>
+
                         <div class="rating">
                             <i class='bx bxs-star'></i>
                             <i class='bx bx-star'></i>
@@ -1496,9 +1697,7 @@ iframe {
                         </div>
                         <div class="buy-now">
                             <button><a href="">Buy  Now</a></button>
-                        </div>
-                        <div class="add-cart">
-                            <button><a href="">Add to cart</a></button>
+                            <button> Add to cart</button>
                         </div>
                     </div>
                 </div>
@@ -1516,8 +1715,11 @@ iframe {
                     <h1>Contact Us</h1>
                     <span>As you might expect of a company that began as a high-end interiors contractor, we pay strict
                         attention.</span>
-                    <h3>USA</h3>
-                    <p>195 E Parker Square Dr, Parker, CO 801<br>+43 982-314-0958</p>
+
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.726565058561!2d75.70256857564169!3d31.255991974336162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5f5e9c489cf3%3A0x4049a5409d53c300!2sLovely%20Professional%20University!5e0!3m2!1sen!2sin!4v1704648011709!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <form action="https://formspree.io/f/xzbowpjq" method="POST">
+                        
                     <h3>India</h3>
                     <p>LPU Punjab,Jalandhar<br>144411</p>
                 </div>
@@ -1550,7 +1752,10 @@ iframe {
                 <h4>NEWLETTER</h4>
                 <p>Be the first to know about new<br>arrivals, look books, sales & promos!</p>
                 <div class="f-mail">
-                    <input type="email" placeholder="Your Email">
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+
+                    <button>SUBMIT
+                    </button>
                     <i class='bx bx-envelope'></i>
                 </div>
                 <hr>
@@ -1587,3 +1792,5 @@ $(".menu-items a").click(function () {
         </div>
     </footer>
 </body>
+
+
